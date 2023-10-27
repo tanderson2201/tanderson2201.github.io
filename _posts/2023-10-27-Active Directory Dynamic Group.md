@@ -5,8 +5,6 @@ categories: [Scripting, Powershell]
 tags: [script, powershell, activedirectory]     # TAG names should always be lowercase
 ---
 
-## H2 - heading
 {: data-toc-skip='Active Directory Dynamic Group' .mt-4 .mb-0 }
 
-## Paragraph
 On occasion third-party application will require an Active Directory (AD) group to manage users access. When ran, depending on the variable Organizational Units (OU) and requirements that you have set it will automatically add and remove users from the group. 
