@@ -4,13 +4,15 @@ icon: fas fa-book
 order: 5
 ---
 
-PROFESSIONAL PROFILE 
+## H2 - PROFESSIONAL PROFILE 
+{: data-toc-skip='' .mt-4 .mb-0 }
 
 I am a hardworking and self-motivated individual, who is looking to develop my profession and expertise. I have keen interest in security and networking, of which I have been continuously developing my dexterity throughout the four years of learning at college, as well as completing an apprenticeship course within networking. I am currently working as an Infrastructure Engineer; I have been challenging my skills in problem-solving tasks and incidents throughout my time working in the finance sector. I am looking to drive my career forwards by completing the CompTIA Security+ (SY0-701) as this will further advance my skills within security.  
 
  
 
-CORE SKILLS 
+## H2 - CORE SKILLS 
+{: data-toc-skip='' .mt-4 .mb-0 }
 
 Experienced with Cisco Firepower for deploying virtual private networks, troubleshooting connectivity issues, setting up access control lists/network address translation rules, as well as locking down and securing networks. 
 
@@ -36,7 +38,8 @@ Assisted with IT audits for SOC reports and other related compliance.
 
 
 
-WORK EXPIERENCE 
+## H2 - WORK EXPIERENCE 
+{: data-toc-skip='' .mt-4 .mb-0 }
 
 SEP 2021 – ONGOING: IT Infrastructure Engineer (SOLIFI) 
 
@@ -56,7 +59,8 @@ I have had former work experience at KAB Seating. In my role I dealt with techni
 
  
 
- ACHIEVED 
+ ## H2 -  ACHIEVEMENTS
+{: data-toc-skip='' .mt-4 .mb-0 }  
 
 BCS Level 4 Network Engineer 
 
@@ -65,7 +69,8 @@ OCR Level 3 Cambridge Technical Foundation Diploma in IT
 
 
 
-EDUCATION 
+ ## H2 -  EDUCATION
+{: data-toc-skip='' .mt-4 .mb-0 }   
 
 Apprenticeship at White Clarke Group (2019-2021), where I completed BCS Level 4 Network Engineer 
 
