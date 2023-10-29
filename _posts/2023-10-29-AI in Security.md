@@ -1,7 +1,7 @@
 ---
 title: AI in Security
 date: 2023-10-29 19:08:42 +/-TTTT
-categories: [Scripting, Powershell]
+categories: [Security, AI]
 tags: [ai, security, internationalsecurityexpo]     # TAG names should always be lowercase
 ---
 
