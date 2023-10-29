@@ -12,7 +12,6 @@ I am a hardworking and self-motivated individual, who is looking to develop my p
 ####  CORE SKILLS
 {: data-toc-skip='' .mt-4 }
 
-### Unordered list
 - Experienced with Cisco Firepower for deploying virtual private networks, troubleshooting connectivity issues, setting up access control lists/network address translation rules, as well as locking down and securing networks. 
 - Troubleshoot security vulnerabilities and malware incidents within application, computers, servers, user accounts and networks. I have stepped up to resolve vulnerabilities, perform incident responses and minimise any further risks using arrange of different security applications e.g., Carbon Black, Tanium, Mimecast, Forcepoint, Trend Micro. 
 - Utilised monitoring solutions to investigate and resolve networking issues via Tanium, Lansweeper, PRTG Network Monitor, Cisco Meraki, and Wireshark. 
@@ -28,7 +27,6 @@ I am a hardworking and self-motivated individual, who is looking to develop my p
 #### WORK EXPIERENCE 
 {: data-toc-skip='' .mt-4 }
 
-### Description list
 SEP 2021 – ONGOING: IT Infrastructure Engineer (SOLIFI) 
 : I am currently working at Solifi (merge of White Clarke Group, IDS, and William Stucky), in an Infrastructure Engineer role for over four years from starting as an apprentice. I face an array of strenuous tasks created by internal and external customers from diagnosing network issues to configuring servers. I always take pride in my skill set to enhance the existing network and security infrastructure. 
 
@@ -41,15 +39,15 @@ JUL 2019 – MAR 2019: IT Operations Apprentice – Level 3 IT Engineer (White C
 MAR 2019 – APR 2019: IT Work Experience (KAV Seating, CVG Group) 
 : I have had former work experience at KAB Seating. In my role I dealt with technical issues surrounding software and hardware in the organisation. I learned how to deal with technical issues under pressure and prevent them from affecting production.
 
- ####  ACHIEVEMENTS
- {: data-toc-skip='' .mt-4 }
+####  ACHIEVEMENTS
+{: data-toc-skip='' .mt-4 }
 
 BCS Level 4 Network Engineer 
 OCR Level 3 Cambridge Technical Foundation Diploma in IT
 European Computer Driving Licence
 
- #### EDUCATION
- {: data-toc-skip='' .mt-4 }
+#### EDUCATION
+{: data-toc-skip='' .mt-4 }
 
 Apprenticeship at White Clarke Group (2019-2021), where I completed BCS Level 4 Network Engineer 
 Studied at Northampton College (2017-2019), where I completed OCR Level 3 Cambridge Technical Foundation Diploma in IT. 
