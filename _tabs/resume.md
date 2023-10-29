@@ -39,16 +39,12 @@ JUL 2019 – MAR 2019: IT Operations Apprentice – Level 3 IT Engineer (White C
 MAR 2019 – APR 2019: IT Work Experience (KAV Seating, CVG Group) 
 : I have had former work experience at KAB Seating. In my role I dealt with technical issues surrounding software and hardware in the organisation. I learned how to deal with technical issues under pressure and prevent them from affecting production.
 
-####  ACHIEVEMENTS
+####  EDUCATION & ACHIEVEMENTS
 {: data-toc-skip='' .mt-4 }
 
-BCS Level 4 Network Engineer 
-OCR Level 3 Cambridge Technical Foundation Diploma in IT
-European Computer Driving Licence
-
-#### EDUCATION
-{: data-toc-skip='' .mt-4 }
-
-Apprenticeship at White Clarke Group (2019-2021), where I completed BCS Level 4 Network Engineer 
-Studied at Northampton College (2017-2019), where I completed OCR Level 3 Cambridge Technical Foundation Diploma in IT. 
-Studied at Northampton School for Boys (2013 – 2017) where I completed my European Computer Driving Licence and GCSE’s. 
+- BCS Level 4 Network Engineer 
+    + Apprenticeship at White Clarke Group (2019-2021), where I completed BCS Level 4 Network Engineer 
+- OCR Level 3 Cambridge Technical Foundation Diploma in IT
+    + Studied at Northampton College (2017-2019), where I completed OCR Level 3 Cambridge Technical Foundation Diploma in IT. 
+- European Computer Driving Licence
+    + Studied at Northampton School for Boys (2013 – 2017) where I completed my European Computer Driving Licence and GCSE’s. 
