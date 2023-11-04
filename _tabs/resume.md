@@ -36,7 +36,7 @@ MAR 2020 – SEP 2021: IT Operations Apprentice – Level 4 Networking Engineer 
 JUL 2019 – MAR 2019: IT Operations Apprentice – Level 3 IT Engineer (White Clarke Group) 
 : Worked on support desk facing a variety of IT issues while working towards a level 3 apprenticeship.
 
-MAR 2019 – APR 2019: IT Work Experience (KAV Seating, CVG Group) 
+MAR 2019 – APR 2019: IT Work Experience (KAB Seating, CVG Group) 
 : I have had former work experience at KAB Seating. In my role I dealt with technical issues surrounding software and hardware in the organisation. I learned how to deal with technical issues under pressure and prevent them from affecting production.
 
 ####  EDUCATION & ACHIEVEMENTS
