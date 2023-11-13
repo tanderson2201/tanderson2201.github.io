@@ -22,7 +22,7 @@ Although ChatGPT can be an essential tool for organisations it can also be manip
 OpenAI have tried to prevent the chatbot from out putting these malicious chats. However, they can be easily overridden by using social engineering on the chatbot, utilising DAN or Jailbreak a string of text created to manipulate the chatbot to do anything (this can be found online). Therefore, can be manipulated by attackers to efficiently create new intelligent attacks.
 
 ### Default (with caption)
-![Desktop View](images/chatgpt_dan.png){: width="972" height="589" }
+![Desktop View](/assets/images/chatgpt_dan.png){: width="972" height="589" }
 
 ####  DarkBERT
 {: data-toc-skip='' .mt-4 }
@@ -33,7 +33,7 @@ Nevertheless, attackers don’t even need to manipulate ChatGPT to get the infor
 - Can be used to fine explicit or leaked information about companies of individuals. 
 
 ### Default (with caption)
-![Desktop View](images/darkbert_site.png){: width="972" height="589" }
+![Desktop View](/assets/images/darkbert_site.png){: width="972" height="589" }
 
 Unlike ChatGPT, this chatbot will provide unethical answers that can assist in creating malware, systems to exploit known vulnerabilities, and smart phishing attacks all at an instance. This is a concerning time for anymore in the cyber security field.  
 
