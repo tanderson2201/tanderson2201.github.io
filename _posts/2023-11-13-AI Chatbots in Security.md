@@ -1,15 +1,17 @@
 ---
 title: AI Chatbots in Security
-date: 2023-11-13 17:46:52 +/-TTTT
+date: 2023-11- 17:46:52 +/-TTTT
 categories: [Security, AI, Chatbots]
-tags: [security, ai, chatbot, chatgpt, darkbert, ice2023, expo]     # TAG names should always be lowercase
+tags: [security, ai, chatbot, chatgpt, darkbert, ice2023]     # TAG names should always be lowercase
 ---
 
 {: data-toc-skip='AI Chatbots in Security' .mt-4 .mb-0 }
 
 I attended the International Cyber Expo 2023 at Olympia London, one of the most interesting tech hub stages was educating on using AI for malicious purposes.
 
-{: data-toc-skip='ChatGPT' .mt-4 }
+####  ChatGPT
+{: data-toc-skip='' .mt-4 }
+
 One of the biggest platforms using the AI platform is ChatGPT which is large language model-based chatbot developed by OpenAI. This chatbot is used by multiple organisations for development and has assisted me during the development of scripts. AI is being implemented into many search engines for enhanced search results as well as other applications, this is trending. 
 Although ChatGPT can be an essential tool for organisations it can also be manipulated to create malicious chats, this can include: 
 - Active exploits against vulnerabilities. 
@@ -19,15 +21,25 @@ Although ChatGPT can be an essential tool for organisations it can also be manip
 
 OpenAI have tried to prevent the chatbot from out putting these malicious chats. However, they can be easily overridden by using social engineering on the chatbot, utilising DAN or Jailbreak a string of text created to manipulate the chatbot to do anything (this can be found online). Therefore, can be manipulated by attackers to efficiently create new intelligent attacks.
 
-{: data-toc-skip='DarkBERT' .mt-4 }
+### Default (with caption)
+![Desktop View](/_posts/images/chatgpt_dan.png){: width="972" height="589" }
+
+####  DarkBERT
+{: data-toc-skip='' .mt-4 }
+
 Nevertheless, attackers don’t even need to manipulate ChatGPT to get the information they require, they can use a chatbot like DarkBERT based on the RoBERTa architecture and built as a research tool it is used for research purposes: 
 - Targeted on Dark Web texts.  
 - Removed all explicit content for research purposes. 
 - Can be used to fine explicit or leaked information about companies of individuals. 
 
+### Default (with caption)
+![Desktop View](/_posts/images/darkbert_site.png){: width="972" height="589" }
+
 Unlike ChatGPT, this chatbot will provide unethical answers that can assist in creating malware, systems to exploit known vulnerabilities, and smart phishing attacks all at an instance. This is a concerning time for anymore in the cyber security field.  
 
-{: data-toc-skip='Conclusion' .mt-4 }
+####  Conclusion
+{: data-toc-skip='' .mt-4 }
+
 It is not all bad news, chatbots can be used to enhance security content and can be used to mitigate the risk of potential attacks, it can be used to: 
 - Automate technologies for security within scripts, firewalls, and program configuration. 
 - Review insecure ports and justification behind closing/opening ports. 
