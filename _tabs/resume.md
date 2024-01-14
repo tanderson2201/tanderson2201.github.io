@@ -61,7 +61,6 @@ IT Engineer (Work Experience)
 - Dealt with software issues, and hardware malfunctions - worked to resolve issues within SLA. 
 - Resolved issues affecting the production line. 
 
-
 ####  Technology and Tools Summary 
 {: data-toc-skip='' .mt-4 }
 
@@ -111,4 +110,4 @@ GCSEs including Computing and European Computer Driving Licence
 ####  References
 {: data-toc-skip='' .mt-4 }
 
-References can be provided on request. 
+References can be provided on request.
