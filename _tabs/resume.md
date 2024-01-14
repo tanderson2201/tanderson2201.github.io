@@ -16,11 +16,13 @@ Currently focusing on implementing NAC and CASB solutions in the organisation. P
 ####  Areas of Expertise
 {: data-toc-skip='' .mt-4 }
 
-|:-----------------------------|-----------------:|
-| Alfreds Futterkiste          | Maria Anders     |
-| Island Trading               | Helen Bennett    |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli |
-
+|:----------------------------------------------------|----------------------------------------------------:|
+| Incident/Ransomware Response and Crisis Management | Implementing IT/Security Systems, Tools, and Patches |
+| Company System Merges                              | Security Risk Assessment                             |
+| Automating Daily IT Tasks                          | Threat Hunting and Threat Research                   |
+| Network and OS Hardening                           | SOC Security Audits                                  |
+| Secure PowerShell Scripting                        | IT Cloud Applications                                |
+| Automating Daily IT Tasks                          | Threat Hunting and Threat Research                   |
 
 #### WORK EXPIERENCE 
 {: data-toc-skip='' .mt-4 }
