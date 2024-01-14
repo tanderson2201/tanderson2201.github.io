@@ -4,7 +4,7 @@ icon: fas fa-book
 order: 5
 ---
 
-####  PROFESSIONAL PROFILE
+####  Professional Profile
 {: data-toc-skip='' .mt-4 }
 
 Hardworking, self-motivated individual and experienced engineer in the finance sector. Recently promoted to a security engineer role, implementing security solutions, remediating security risks and issues. 
@@ -13,20 +13,14 @@ Extensive experience in security networking, programming, and configuring. Diver
 
 Currently focusing on implementing NAC and CASB solutions in the organisation. Personally, working towards CompTIA Security+ (SY0-701) to develop my expertise. 
 
-####  CORE SKILLS
+####  Areas of Expertise
 {: data-toc-skip='' .mt-4 }
 
-- Experienced with Cisco Firepower for deploying virtual private networks, troubleshooting connectivity issues, setting up access control lists/network address translation rules, as well as locking down and securing networks. 
-- Troubleshoot security vulnerabilities and malware incidents within application, computers, servers, user accounts and networks. I have stepped up to resolve vulnerabilities, perform incident responses and minimise any further risks using arrange of different security applications e.g., Carbon Black, Tanium, Mimecast, Forcepoint, Trend Micro. 
-- Utilised monitoring solutions to investigate and resolve networking issues via Tanium, Lansweeper, PRTG Network Monitor, Cisco Meraki, and Wireshark. 
-- Deployed a range of different operating systems on VMware, Hyper-V, and Proxmox. I strive in resolving any issues and maintaining the highest level of security that can be applied on the operating system. 
-- Experience with companies merging systems: worked on procedures, automation, and documentation. 
-- Setup and configured the following within Windows: Domain Name Services, Group Policy, Active Directory, Internet Information Services, Routing and Remote Access Services. 
-- Developed secure automation scripts and application from active directory automation systems to service desk analytics using the following languages: PowerShell, Atlassian API, VB.net and Go.  
-- Provided IT support using Jira Service Desk and ServiceNow, I will go out of my way to meet the service-level agreement, able to prioritise tickets, manage multiple issues, change requests and incident management requests.  
-- Experience on Veeam products to manage and keep backups secure.  
-- Handled Microsoft 365 administration to control applications, services, data, devices, and users on multiple tenants. 
-- Assisted with IT audits for SOC reports and other related compliance. 
+|:-----------------------------|-----------------:|
+| Alfreds Futterkiste          | Maria Anders     |
+| Island Trading               | Helen Bennett    |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |
+
 
 #### WORK EXPIERENCE 
 {: data-toc-skip='' .mt-4 }
