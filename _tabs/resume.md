@@ -7,7 +7,11 @@ order: 5
 ####  PROFESSIONAL PROFILE
 {: data-toc-skip='' .mt-4 }
 
-I am a hardworking and self-motivated individual, who is looking to develop my profession and expertise. I have keen interest in security and networking, of which I have been continuously developing my dexterity throughout the four years of learning at college, as well as completing an apprenticeship course within networking. I am currently working as an Infrastructure Engineer; I have been challenging my skills in problem-solving tasks and incidents throughout my time working in the finance sector. I am looking to drive my career forwards by completing the CompTIA Security+ (SY0-701) as this will further advance my skills within security.  
+Hardworking, self-motivated individual and experienced engineer in the finance sector. Recently promoted to a security engineer role, implementing security solutions, remediating security risks and issues. 
+
+Extensive experience in security networking, programming, and configuring. Diverse knowledge of systems and applications in these fields with a key understanding of enterprise resource planning and endpoint detection response. 
+
+Currently focusing on implementing NAC and CASB solutions in the organisation. Personally, working towards CompTIA Security+ (SY0-701) to develop my expertise. 
 
 ####  CORE SKILLS
 {: data-toc-skip='' .mt-4 }
