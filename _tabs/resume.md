@@ -18,17 +18,25 @@ Currently focusing on implementing NAC and CASB solutions in the organisation. P
 
 |:----------------------------------------------------|----------------------------------------------------:|
 | Incident/Ransomware Response and Crisis Management | Implementing IT/Security Systems, Tools, and Patches |
-| Company System Merges                              | Security Risk Assessment                             |
-| Automating Daily IT Tasks                          | Threat Hunting and Threat Research                   |
-| Network and OS Hardening                           | SOC Security Audits                                  |
-| Secure PowerShell Scripting                        | IT Cloud Applications                                |
-| Automating Daily IT Tasks                          | Threat Hunting and Threat Research                   |
+|                Company System Merges               |               Security Risk Assessment               |
+|              Automating Daily IT Tasks             |         Threat Hunting and Threat Research           |
+|               Network and OS Hardening             |                 SOC Security Audits                  |
+|             Secure PowerShell Scripting            |                IT Cloud Applications                 |
 
-#### WORK EXPIERENCE 
+#### Work Experience
 {: data-toc-skip='' .mt-4 }
 
-SEP 2021 – ONGOING: IT Infrastructure Engineer (SOLIFI) 
-: I am currently working at Solifi (merge of White Clarke Group, IDS, and William Stucky), in an Infrastructure Engineer role for over four years from starting as an apprentice. I face an array of strenuous tasks created by internal and external customers from diagnosing network issues to configuring servers. I always take pride in my skill set to enhance the existing network and security infrastructure. 
+Security Engineer: DEC 2023 – PRESENT 
+Solifi (merge of IDS, White Clarke Group, and William Stucky)
+
+- Tasked with managing security: incidents, questions, documentation, exceptions, vulnerabilities, and risks.  
+- Leading security hardening standards, applications, and policies implemented following CIS Benchmarks. 
+- Remediating security risks on-prem and in cloud-hosted environments. 
+- Utilised PIM/PAM tools to manage the number of privileged accounts across environments. 
+- Provided evidence for SOC1 and SOC2 audits. 
+- Support external penetration tests and performed internal tests. 
+- Actively work with ArticWolf (third-party security operations) to improve the security infrastructure and resolve issues. 
+- Implementing NAC and CASB solutions to enhance unauthorised access and web filtering capabilities. 
 
 MAR 2020 – SEP 2021: IT Operations Apprentice – Level 4 Networking Engineer (White Clarke Group) 
 : Enquired to move to level 4 networking apprenticeship as I had the previous qualifications to do so, I directed my attention on to configuring, improving, and securing the existing network.
