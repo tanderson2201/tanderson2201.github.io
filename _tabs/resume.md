@@ -18,16 +18,17 @@ Currently focusing on implementing NAC and CASB solutions in the organisation. P
 
 |:----------------------------------------------------|----------------------------------------------------:|
 | Incident/Ransomware Response and Crisis Management | Implementing IT/Security Systems, Tools, and Patches |
-|                Company System Merges               |               Security Risk Assessment               |
-|              Automating Daily IT Tasks             |         Threat Hunting and Threat Research           |
-|               Network and OS Hardening             |                 SOC Security Audits                  |
-|             Secure PowerShell Scripting            |                IT Cloud Applications                 |
+| Company System Merges                              | Security Risk Assessment                             |
+| Automating Daily IT Tasks                          | Threat Hunting and Threat Research                   |
+| Network and OS Hardening                           | SOC Security Audits                                  |
+| Secure PowerShell Scripting                        | IT Cloud Applications                                |
 
 #### Work Experience
 {: data-toc-skip='' .mt-4 }
 
-Security Engineer: DEC 2023 – PRESENT 
-Solifi (merge of IDS, White Clarke Group, and William Stucky)
+Security Engineer
+: DEC 2023 – PRESENT 
+: Solifi (merge of IDS, White Clarke Group, and William Stucky)
 
 - Tasked with managing security: incidents, questions, documentation, exceptions, vulnerabilities, and risks.  
 - Leading security hardening standards, applications, and policies implemented following CIS Benchmarks. 
