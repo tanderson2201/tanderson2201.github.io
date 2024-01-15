@@ -25,7 +25,7 @@ Currently focusing on implementing NAC and CASB solutions in the organisation. P
 #### Work Experience
 {: data-toc-skip='' .mt-4 }
 
-Security Engineer
+Cyber Security Engineer
 : DEC 2023 – PRESENT : Solifi (merge of IDS, White Clarke Group, and William Stucky)
 - Tasked with managing security: incidents, questions, documentation, exceptions, vulnerabilities, and risks.  
 - Leading security hardening standards, applications, and policies implemented following CIS Benchmarks. 
