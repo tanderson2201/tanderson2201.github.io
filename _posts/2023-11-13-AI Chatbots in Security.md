@@ -31,8 +31,7 @@ Nevertheless, attackers don’t even need to manipulate ChatGPT to get the infor
 - Removed all explicit content for research purposes. 
 - Can be used to fine explicit or leaked information about companies of individuals. 
 
-{% include embed/youtube.html id='lTt8dQl0No8' %}
-_Source: [[Demo] Compare DarkBERT with OpenAI ChatGPT and Google BARD.](https://www.youtube.com/watch?v=lTt8dQl0No8)_
+{% include embed/youtube.html id='lTt8dQl0No8' %}_Source: [[Demo] Compare DarkBERT with OpenAI ChatGPT and Google BARD.](https://www.youtube.com/watch?v=lTt8dQl0No8)_
 
 Unlike ChatGPT, this chatbot will provide unethical answers that can assist in creating malware, systems to exploit known vulnerabilities, and smart phishing attacks all at an instance. This is a concerning time for anymore in the cyber security field.  
 
