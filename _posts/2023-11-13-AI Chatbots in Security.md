@@ -5,11 +5,8 @@ categories: [Security, AI, Chatbots]
 tags: [security, ai, chatbot, chatgpt, darkbert, ice2023]     # TAG names should always be lowercase
 image:
   path: /assets/images/icon_ai_chatbots.png
+  alt: What information are you giving to AI Chatbots?
 ---
-
-{: data-toc-skip='AI Chatbots in Security' .mt-4 .mb-0 }
-
-I attended the International Cyber Expo 2023 at Olympia London, one of the most interesting tech hub stages was educating on using AI for malicious purposes.
 
 ####  ChatGPT
 {: data-toc-skip='' .mt-4 }
@@ -23,7 +20,8 @@ Although ChatGPT can be an essential tool for organisations it can also be manip
 
 OpenAI have tried to prevent the chatbot from out putting these malicious chats. However, they can be easily overridden by using social engineering on the chatbot, utilising DAN or Jailbreak a string of text created to manipulate the chatbot to do anything (this can be found online). Therefore, can be manipulated by attackers to efficiently create new intelligent attacks.
 
-![Desktop View](/assets/images/chatgpt_dan.png){: width="972" height="589" }
+![Desktop View](/assets/images/pages/ai_chatbots_in_security/chatgpt_dan.png){: width="700" height="400" }
+_Source: [ChatGPT (openai.com)](https://openai.com/chatgpt)_
 
 ####  DarkBERT
 {: data-toc-skip='' .mt-4 }
@@ -33,7 +31,8 @@ Nevertheless, attackers don’t even need to manipulate ChatGPT to get the infor
 - Removed all explicit content for research purposes. 
 - Can be used to fine explicit or leaked information about companies of individuals. 
 
-![Desktop View](/assets/images/darkbert_site.png){: width="972" height="589" }
+{% include embed/youtube.html id='lTt8dQl0No8' %}
+_Source: [[Demo] Compare DarkBERT with OpenAI ChatGPT and Google BARD.](https://www.youtube.com/watch?v=lTt8dQl0No8)_
 
 Unlike ChatGPT, this chatbot will provide unethical answers that can assist in creating malware, systems to exploit known vulnerabilities, and smart phishing attacks all at an instance. This is a concerning time for anymore in the cyber security field.  
 
