@@ -4,7 +4,7 @@ date: 2023-11-13 17:46:52 +/-TTTT
 categories: [Security, AI, Chatbots]
 tags: [security, ai, chatbot, chatgpt, darkbert, ice2023]     # TAG names should always be lowercase
 image:
-  path: /assets/images/icon_ai_chatbots.png
+  path: /assets/images/pages/ai_chatbots_in_security/icon_ai_chatbots.png
   alt: What information are you giving to AI Chatbots?
 ---
 

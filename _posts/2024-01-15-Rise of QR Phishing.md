@@ -4,7 +4,7 @@ date: 2024-01-15 22:05:32 +/-TTTT
 categories: [Security, Phishing, QR]
 tags: [security, qr, phishing, quishing]     # TAG names should always be lowercase
 image:
-  path: /assets/images/icon_qr_phishing.png
+  path: /assets/images/pages/rise_of_qr_phishing/icon_qr_phishing.png
   alt: 6.8 billion QR codes were scanned in 2023, how many were phishing?
 ---
 
