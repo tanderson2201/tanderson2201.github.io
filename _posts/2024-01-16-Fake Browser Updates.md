@@ -1,7 +1,7 @@
 ---
 title: Fake Browser Updates
 date: 2024-01-16 22:42:12 +/-TTTT
-categories: [Security, Attacks, Updates]
+categories: [Security, AttackTypes, ClearFake]
 tags: [chrome, browser, fake]     # TAG names should always be lowercase
 image:
   path: /assets/images/pages/fake_browser_updates/icon_fake_browser_updates.png
