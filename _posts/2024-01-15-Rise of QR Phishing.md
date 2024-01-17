@@ -1,7 +1,7 @@
 ---
 title: Rise of QR Phishing 
 date: 2024-01-15 22:05:32 +/-TTTT
-categories: [Security, Phishing, QR]
+categories: [Security, AttackTypes, Phishing]
 tags: [security, qr, phishing, quishing]     # TAG names should always be lowercase
 image:
   path: /assets/images/pages/rise_of_qr_phishing/icon_qr_phishing.png
