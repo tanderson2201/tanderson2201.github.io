@@ -11,7 +11,7 @@ image:
 ####  ChatGPT
 {: data-toc-skip='' .mt-4 }
 
-One of the biggest platforms using the AI platform is ChatGPT which is large language model-based chatbot developed by OpenAI. This chatbot is used by multiple organisations for development and has assisted me during the development of scripts. AI is being implemented into many search engines for enhanced search results as well as other applications, this is trending. 
+Is one of the biggest platforms using the AI platform developed by OpenAI. This chatbot is used by multiple organisations for development and has assisted me during the development of scripts. AI is being implemented into many search engines for enhanced search results as well as other applications, this is trending. 
 Although ChatGPT can be an essential tool for organisations it can also be manipulated to create malicious chats, this can include: 
 - Active exploits against vulnerabilities. 
 - Sophisticated spear-phishing content. 

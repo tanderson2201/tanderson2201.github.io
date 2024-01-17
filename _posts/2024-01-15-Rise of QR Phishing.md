@@ -11,7 +11,7 @@ image:
 ####  QR Phishing
 {: data-toc-skip='AI Chatbots in Security' .mt-4 .mb-0 }
 
-QR phishing (Quishing) is the practice of using QR scanning to redirect victims to a malicious site or program. This can be done virtually on messaging services/emails or physically on information boards/posters. 
+Known as Quishing is the practice of using QR scanning to redirect victims to a malicious site or program. This can be done virtually on messaging services/emails or physically on information boards/posters. 
 
 The use of QR codes is becoming more common for accessing websites, media, information as well as used to authenticate account logins. Consequently, users are at risk of mistaken phishing QR codes for legitimate codes.  
 
