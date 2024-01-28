@@ -18,7 +18,7 @@ The use of QR codes is becoming more common for accessing websites, media, infor
 Due to the QR code hiding the URL, it can be used to bypass email filters. Allowing for malicious QR codes to evade email security systems. Therefore, it is best practice to implement Quishing training and email simulations across your organisation. 
 
 
-####  Examples:
+####  Examples
 {: data-toc-skip='AI Chatbots in Security' .mt-4 .mb-0 }
 
 - Microsoft Credentials Quishing

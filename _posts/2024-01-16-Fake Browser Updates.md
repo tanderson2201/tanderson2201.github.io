@@ -27,5 +27,5 @@ _Source: [Google Chrome Users Warned: Don’t Click To Update Browser On Website
   + Chrome can be updated following this guide: [Update Google Chrome - Computer - Google Chrome Help](https://support.google.com/chrome/answer/95414?hl=en&co=GENIE.Platform%3DDesktop)_
 - Use caution when accessing any sites, avoid clicking any pop ups and suspicious links. 
   + Check the URL of the site, it might be similar (look-a-like) webite.
-- Always enable anti-virus, it may block the malware from running.
+- Always enable your anti-virus, it may block the malware from running.
   + Malwarebytes provide a free anitvirus software: [Malwarebytes Free: Free Antivirus 2024 | 100% Free & Easy Install](https://www.malwarebytes.com/mwb-download)_
