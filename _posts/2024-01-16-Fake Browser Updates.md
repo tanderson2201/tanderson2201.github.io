@@ -24,8 +24,10 @@ _Source: [Google Chrome Users Warned: Don’t Click To Update Browser On Website
 ####  How to prevent fake browser updates
 {: data-toc-skip='AI Chatbots in Security' .mt-4 .mb-0 }
 - Follow an update guide from the browser provider, you will always update the browser in the setting.
-  + Chrome can be updated following this guide: [Update Google Chrome - Computer - Google Chrome Help](https://support.google.com/chrome/answer/95414?hl=en&co=GENIE.Platform%3DDesktop)_
+  + Chrome can be updated following this guide: [Update Google Chrome - Computer - Google Chrome Help](https://support.google.com/chrome/answer/95414?hl=en&co=GENIE.Platform%3DDesktop)
 - Use caution when accessing any sites, avoid clicking any pop ups and suspicious links. 
   + Check the URL of the site, it might be similar (look-a-like) webite.
 - Always enable your anti-virus, it may block the malware from running.
-  + Malwarebytes provide a free anitvirus software: [Malwarebytes Free: Free Antivirus 2024 | 100% Free & Easy Install](https://www.malwarebytes.com/mwb-download)_
+  + Malwarebytes provide a free anitvirus software: [Malwarebytes Free: Free Antivirus 2024 | 100% Free & Easy Install](https://www.malwarebytes.com/mwb-download)
+
+
