@@ -35,13 +35,11 @@ Monitoring is a key part of keeping the integrity and availability of backups, w
 ####  Outcome
 {: data-toc-skip='Outcome' .mt-4 .mb-0 }
 
-Outcome:
 - Weekly scheduled backups of all hosts.
-- Alerts and monitoring of backup, letting me know the status of backups and drive health.
+- Alerts and monitoring of backups, letting me know the status of backups and drive health.
 - Instant backup recovery allowing to restore a host directly from the NAS.
 
 Useful links:
 - [Backup and Restore - Proxmox VE ](https://pve.proxmox.com/wiki/Backup_and_Restore).
 - [Disk Health Monitoring - Proxmox VE](https://pve.proxmox.com/mediawiki/index.php?title=Disk_Health_Monitoring&action=edit).
 - [Notifications - Proxmox VE](https://pve.proxmox.com/wiki/Notifications#:~:text=Backup%20jobs%20have%20a%20configurable).
-
