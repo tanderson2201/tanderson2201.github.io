@@ -14,6 +14,7 @@ These PowerShell scripts for automating the creation of tickets, adding a commen
 
 
 1. Creates a ticket in the set location, provides the ticket key if created successfully.
+
 ```powershell
 try {
     $baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
@@ -66,6 +67,7 @@ try {
 ```
 
 2. Checks set location for tickets with a matching variable e.g. title, it will then add a comment to the ticket.
+
 ```powershell
 try {
     $baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
@@ -135,6 +137,7 @@ try {
 ```
 
 3. Checks set location for a matching comment across all tickets, it will then add a comment to the ticket.
+
 ```powershell
 $baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
 $searchEndpoint = "$baseUrl/rest/api/2/search"
