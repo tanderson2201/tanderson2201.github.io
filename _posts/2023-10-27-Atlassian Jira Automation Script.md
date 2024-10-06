@@ -2,7 +2,7 @@
 title: Atlassian Jira Automation Script
 date: 2024-10-6 12:27:23 +/-TTTT
 categories: [Scripting, Powershell, Atlassian, Jira]
-tags: [script, powershell, activedirectory]     # TAG names should always be lowercase
+tags: [script, powershell, atlassian, jira]     # TAG names should always be lowercase
 ---
 
 {: data-toc-skip='Atlassian Jira Automation Script' .mt-4 .mb-0 }
