@@ -1,5 +1,5 @@
 ---
-title: Active Directory Dynamic Group
+title: Active Directory Dynamic Group Script
 date: 2023-10-27 10:18:48 +/-TTTT
 categories: [Scripting, Powershell, ActiveDirectory]
 tags: [script, powershell, activedirectory]     # TAG names should always be lowercase
