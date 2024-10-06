@@ -9,7 +9,7 @@ tags: [script, powershell, atlassian, jira]     # TAG names should always be low
 
 These PowerShell scripts for automating the creation of tickets, adding a comment to a ticket and creating actions based of a comment in a ticket using the Atlassian REST API. These scripts can implemented into new and existing projects to assist with automation or logging of activities.
 
-> Create API key [here](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) `do not share this key and keep it in a secure location`.
+> Create API key [here.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) Do not share this key and keep it in a secure location.
 {: .prompt-info }
 
 
@@ -140,7 +140,7 @@ $baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
 $searchEndpoint = "$baseUrl/rest/api/2/search"
 
 # Prepare the JQL query to search for the title
-$title = "Test Title" # Replace Title.
+$title = "Account Disablement"
 $jqlQuery = "summary ~ `"$title`" ORDER BY created DESC"
 
 # API credentials
