@@ -89,6 +89,9 @@ IT Engineer (Work Experience)
 ####  Education and Certification 
 {: data-toc-skip='' .mt-4 }
 
+Certified in Cybersecurity
+: SEPT 2024 : ISC2
+
 BCS Level 4 Network Engineer
 : 2019 – 2021 : QA Apprenticeship 
 
