@@ -5,7 +5,7 @@ categories: [Security, API, Vehicles]
 tags: [security, api, vehicles, kia, hijack, hack]     # TAG names should always be lowercase
 image:
   path: /assets/images/pages/vehicle_api_hacking/icon_api_vehicles.png
-  alt: More technologies is not always a good thing.
+  alt: Not all technology is good.
 ---
 
 ####  Vehicle Hacking
@@ -22,7 +22,7 @@ Vehicle manufactures innovate to keep ahead of to try keep ahead of the technolo
 - Data exposure from APIs as they can expose data between services which can then be intercepted if there is not proper encryption, this could allow for sessions to be stolen. 
 - Unauthorised access can give bad actors access to the vehicle, personal information and card details.
 
-####  Kia’s cloud registered vehicles hacked
+####  Kia’s Incident
 {: data-toc-skip='' .mt-4 }
 
 Kia’s HTTP-based APIs was recently exposed when by Sam Curry, they was able to obtain a valid session which allowed them to query the back-end server for information on customers. This information can be manipulated to demote the car owner and promote the attacker using the API. This would give the attacker full control over the vehicle without the actual owner not having any knowledge of the attack. The most concerning part is this vulnerability effected a number of vehicles Kia’s manufactured after 2013, full details can be found [here.](https://samcurry.net/hacking-kia)
