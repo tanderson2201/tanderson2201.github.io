@@ -11,7 +11,7 @@ image:
 ####  Vehicle Hacking
 {: data-toc-skip='' .mt-4 }
 
-Vehicle manufactures innovations to keep up with the technology trends maybe its biggest downfall. Technologies such as remote lock/unlock, engine stop/start and autonomous-low speed driving is becoming a more frequent accessory across manufactures. The actions are normally controller by smartphone application that communicated with the manufactures back-end server and to the vehicle. These applications require an internet connection so that it can communicate with manufactures back-end (this would verify the users account, subscriptions and actions) if the verification is successful it will then communicate with the vehicle typically using HTTP-based API to execute actions on the vehicle.
+Vehicle manufactures innovations to keep up with technology trends maybe its biggest downfall. Technologies such as remote lock/unlock, engine stop/start and autonomous-low speed driving is becoming a more frequent accessory across manufactures. The actions are normally controller by smartphone application that communicated with the manufactures back-end server and to the vehicle. These applications require an internet connection so that it can communicate with manufactures back-end (this would verify the users account, subscriptions and actions) if the verification is successful it will then communicate with the vehicle typically using HTTP-based API to execute actions on the vehicle.
 
 ![Desktop View](/assets/images/pages/vehicle_api_hacking/manufactures_connections_transparent.png){: width="700" height="400" }
 
@@ -33,4 +33,4 @@ This attack on the vulnerability was then enhanced when the remote API used to t
 
 ####  Conclusion
 {: data-toc-skip='' .mt-4 }
-When manufactures push out new technologies they should have the safety and security of people in mind first. However, it seems in this case they are not taking a logical approach considering the ease of a bad actor to gain access to a vehicle and the owners personal information. As these technology becomes more frequent due to it’s selling point to customers we will see more of these vulnerabilities appearing across other manufactures but hopefully the use query crafting tools to be able to discover these vulnerabilities before they go to productions.
+When manufactures push out new technologies they should have the safety and security of people in mind first. However, it seems in this case they are not taking that logical approach considering how easy it would be for a bad actor to gain access to a vehicle and the owners personal information. As these technology becomes more frequent due to its selling point to customers we will see more of these vulnerabilities appearing across other manufactures but hopefully the use query crafting tools to be able to discover these vulnerabilities before they go to productions.
