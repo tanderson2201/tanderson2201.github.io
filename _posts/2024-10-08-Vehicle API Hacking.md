@@ -11,7 +11,7 @@ image:
 ####  Vehicle Hacking
 {: data-toc-skip='' .mt-4 }
 
-Vehicle manufactures innovate to keep ahead of to try keep ahead of the technology trend maybe it’s biggest downfall. Technologies such as remote lock/unlock, engine stop/start and autonomous-low speed driving is becoming a more frequent accessory across manufactures. The actions are normally controller by smartphone application that communicated with the manufactures back-end server and to the vehicle. These applications require an internet connection so that it can communicate with manufactures back-end (this would verify the users account, subscriptions and actions) if the verification is successful it will then communicate with the vehicle typically using HTTP-based API to execute actions on the vehicle.
+Vehicle manufactures innovations to keep up with the technology trends maybe its biggest downfall. Technologies such as remote lock/unlock, engine stop/start and autonomous-low speed driving is becoming a more frequent accessory across manufactures. The actions are normally controller by smartphone application that communicated with the manufactures back-end server and to the vehicle. These applications require an internet connection so that it can communicate with manufactures back-end (this would verify the users account, subscriptions and actions) if the verification is successful it will then communicate with the vehicle typically using HTTP-based API to execute actions on the vehicle.
 
 ![Desktop View](/assets/images/pages/vehicle_api_hacking/manufactures_connections_transparent.png){: width="700" height="400" }
 
