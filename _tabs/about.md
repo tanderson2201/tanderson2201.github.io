@@ -6,18 +6,18 @@ order: 4
 ####  About Me
 {: data-toc-skip='' .mt-4 }
 
-![Desktop View](/assets/images/pages/about/about_me.png){: width="300 height="300" }
-
 Hi, I’m Tom, and I am currently working as Cyber Security Engineer in the Finance Technology sector. I am passionate about technology and am dedicated to crafting innovative solutions that make a difference. In security, being told “anything can be hacked” had peaked my curiosity when it comes to hack types, tools, systems, as well as how the risks can be mitigated, I hope to make a difference in this space.
 
 Since a young age I have been fascinated by computers. I worked at a paper-round which helped me to be able to afford my first computer, in which contained an AMD Athlon X4 and XFX 7770. This allowed me to explore hardware and software, to which mostly led to playing around with things, breaking and fixing things.
 
 This interest directed my career into the technology, studying foundation diploma in IT at college, networking apprenticeship, to IT and security engineering roles. Technology always developes quickly, so there is a continuous state of learning in the space, I hope to share and build knowledge platform with other.
+![Desktop View](/assets/images/pages/about/about_me.png){: width="300 height="300" }
 
 ####  About This Site 
 {: data-toc-skip='' .mt-4 }
 
-This platform is used to share knowledge and documents of security developments, home lab solutions, scripting, and more. If you have any interests in my posts or want to share your own experiences, you can write a comment using your GitHub account. It will be a place to collaborate on projects that can be used and developed on by anyone. You are always welcome to explore my site, if you have any feedback or suggestions, you can leave a comment under a post or contact via my email. 
+This platform is used to share knowledge and documents of security developments, home lab solutions, scripting, and more. If you have any interests in my posts or want to share your own experiences, you can write a comment using your GitHub account. It will be a place to collaborate on projects that can be used and developed on by anyone. You are always welcome to explore my site, if you have any feedback or suggestions, you can leave a comment under a post or contact via my email.
+![Desktop View](/assets/images/pages/about/about_this_site.jpg){: width="700" height="400" } 
 
 ####  Current Home Lab
 {: data-toc-skip='' .mt-4 }
