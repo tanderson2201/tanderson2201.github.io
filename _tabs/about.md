@@ -17,7 +17,7 @@ This interest directed my career into the technology, studying foundation diplom
 {: data-toc-skip='' .mt-4 }
 
 This platform is used to share knowledge and documents of security developments, home lab solutions, scripting, and more. If you have any interests in my posts or want to share your own experiences, you can write a comment using your GitHub account. It will be a place to collaborate on projects that can be used and developed on by anyone. You are always welcome to explore my site, if you have any feedback or suggestions, you can leave a comment under a post or contact via my email.
-![Desktop View](/assets/images/pages/about/about_this_site.jpg){: width="700" height="400" } 
+![Desktop View](/assets/images/pages/about/about_this_site.png){: width="700" height="400" } 
 
 ####  Current Home Lab
 {: data-toc-skip='' .mt-4 }
