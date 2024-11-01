@@ -1,6 +1,6 @@
 ---
 title: Atlassian Jira Automation Scripts
-date: 2024-10-6 12:27:23 +/-TTTT
+date: 2024-10-06 12:27:23 +/-TTTT
 categories: [Scripting, Powershell, Atlassian, Jira]
 tags: [script, powershell, atlassian, jira]     # TAG names should always be lowercase
 ---
