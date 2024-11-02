@@ -14,12 +14,11 @@ Before running the scripts below, you will need to change the variables to match
 1. Jira Domain: this is listed in the section on the Jira URL e.g. `https://your-domain.atlassian.net`
 2. Jira Project ID: enter `https://your-doman.atlassian.net/rest/api/3/issues/createmeta`, search for the project ID this will be location the ticket will be created, make a note of the project ID.
 3. Jira Issue Type ID: using the project ID enter `https://your-domain.atlassian.net/rest/api/3/isues/createmeta?projectKeys={JiraProjectID}` search for the issue type ID that you want the ticket to be created in, make a note of the issue type ID.
+4. Jira Username:  username that can login to Atlassian and has the correct permissions.
+5. Jira API token: API token can be created [here.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 > You may be required to add mandatory custom fields for tickets to be created, the information can be found here: `https://your-domain.atlassian.net/rest/api/3/isues/createmeta?projectKeys={JiraProjectID}&expand=projects.issuetypes.fields`
 {: .prompt-info }
-
-4. Jira Username:  username that can login to Atlassian and has the correct permissions.
-5. Jira API token: API token can be created [here.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 > Do not share this key and keep it in a secure location.
 {: .prompt-warning }
