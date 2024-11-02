@@ -17,11 +17,11 @@ Before running the scripts below, you will need to change the variables to match
 4. Jira Username:  username that can login to Atlassian and has the correct permissions.
 5. Jira API token: API token can be created [here.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
-> You may be required to add mandatory custom fields for tickets to be created, the information can be found here: `https://your-domain.atlassian.net/rest/api/3/isues/createmeta?projectKeys={JiraProjectID}&expand=projects.issuetypes.fields`
-{: .prompt-info }
-
 > Do not share this key and keep it in a secure location.
 {: .prompt-warning }
+
+> You may be required to add mandatory custom fields for tickets to be created, the information can be found here: `https://your-domain.atlassian.net/rest/api/3/isues/createmeta?projectKeys={JiraProjectID}&expand=projects.issuetypes.fields`
+{: .prompt-info }
 
 ####  Creating Jira Ticket
 {: data-toc-skip='' .mt-4 }

@@ -23,7 +23,7 @@ This platform is used to share knowledge and documents of security developments,
 {: data-toc-skip='' .mt-4 }
 
 Setup is a hosted environment on Proxmox Virtual Environment (Unix-based). Used to experiment with applications, services, virtual firewalls, and emerging threats. Additionally, a Cloud-hosted environment on Oracle Cloud Platform used for testing cloud threats, applications, and website building. I am using this lab to learn, develop and share tools. Shared below is my current network diagram:
-![Desktop View](/assets/images/pages/about/current_home_lab.png){: width="700" height="400" } 
+![Desktop View](/assets/images/pages/about/current_home_lab.png){: width="600" height="300" } 
 
 ####  Current Project
 {: data-toc-skip='' .mt-4 }
