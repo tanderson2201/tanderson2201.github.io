@@ -38,7 +38,7 @@ foreach ($member in $members) {
         Remove-ADGroupMember -Identity $ADGroupname -Members $member.samaccountname -Confirm:$false 
     } 
     # Check if member's 'extensionAttribute2' is now null 
-    elseif ((Get-ADUser -Identity $member.samaccountname -Properties extensionAttribute2).extensionAttribute2 -eq $null) { 
+    elseif (Get-ADUser -Identity $member.samaccountname -Properties extensionAttribute2).extensionAttribute2 -eq $null) { 
         Remove-ADGroupMember -Identity $ADGroupname -Members $member.samaccountname -Confirm:$false 
     } 
 } 
