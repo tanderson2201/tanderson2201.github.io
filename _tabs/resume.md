@@ -8,9 +8,9 @@ order: 5
 
 Hardworking, self-motivated individual and experienced engineer in the finance sector. Recently promoted to a security engineer role, implementing security solutions, remediating security risks and issues. 
 
-Extensive experience in security networking, programming, and configuring. Diverse knowledge of systems and applications in these fields with a key understanding of enterprise resource planning and endpoint detection response. 
+Extensive experience in security networking, programming, and managing. Diverse knowledge of systems and applications in these fields with a key understanding of enterprise resource planning and endpoint detection response. 
 
-Currently focusing on implementing NAC and CASB solutions in the organisation. Personally, working towards CompTIA Security+ (SY0-701) to develop my expertise. 
+Currently focusing on implementing NAC and CASB solutions in the organisation. Personally, working towards ISC2 CISSP to develop my expertise, recently achieved ISC2 CC. 
 
 ####  Areas of Expertise
 {: data-toc-skip='' .mt-4 }
@@ -20,7 +20,7 @@ Currently focusing on implementing NAC and CASB solutions in the organisation. P
 | Company System Merges                              | Security Risk Assessment                             |
 | Automating Daily IT Tasks                          | Threat Hunting and Threat Research                   |
 | Network and OS Hardening                           | SOC Security Audits                                  |
-| Secure PowerShell Scripting                        | IT Cloud Applications                                |
+| Secure Scripting                                   | Cloud Applications                                   |
 
 #### Work Experience
 {: data-toc-skip='' .mt-4 }
@@ -60,56 +60,6 @@ IT Engineer (Work Experience)
 - Dealt with software issues, and hardware malfunctions - worked to resolve issues within SLA. 
 - Resolved issues affecting the production line. 
 
-####  Technology and Tools Summary 
+####  Full Resume
 {: data-toc-skip='' .mt-4 }
-
-|:-------------|------------------------------------------------------------------------------------------------------------------------------:|
-| Security:    | Process Explorer, HxD, Wireshark, SSH, SSL, EDR, ERP.                                                                         |
-| Technologies:| Carbon Black, Forcepoint, Mimecast, Tanium, BeyondTrust, Auvik, Docker, PFSense, NetData, Auvik, VMware, Proxmox, Azure/O365. |
-| Systems:     | PFSense, NetData, Auvik, VMware, Proxmox, Azure/O365.                                                                         |
-| Networking:  | Windows, Unix, MacOS, IOS, Android.                                                                                           |
-| Frameworks:  | ISO27000 Series, CIS WorkBench, SOC.                                                                                          |
-| Languages:   | PowerShell, .GO, Atlassian REST API, HTML, CSS.                                                                               |
-| Software:    | MS Office 365, OpenOffice, Visual Studio Code, nRemoteNG.                                                                     |
-
-####  Key Projects
-{: data-toc-skip='' .mt-4 }
-
-- Implemented custom scripts for managing account disablements, following a secure checking process, and creating an audit trail using PowerShell with Atlassian REST API. 
-- Used leading system management software Tanium to review environments and deploy patches to Windows and Unix virtual machines reducing the number of vulnerabilities. 
-- Worked with Sage People on an Active Directory synchronisation script that connects to their cloud services, the script has been tailed to fit the organisation's needs. 
-
-####  Personal Skills
-{: data-toc-skip='' .mt-4 }
-
-- Assist employees in developing knowledge on a range of different subjects: cyber security, scripting, and applications. 
-- Worked efficiently to meet timelines no matter the size of the project and worked with a range of different team sizes. 
-- Successfully addressed numerous tickets by employing a logical, professional, and attentive approach to problem-solving. 
-
-####  Education and Certification 
-{: data-toc-skip='' .mt-4 }
-
-ISC2 Certified in Cybersecurity
-: SEPT 2024
-
-BCS Level 4 Network Engineer
-: 2019 – 2021 : QA Apprenticeship 
-
-OCR Level 3 Cambridge Technical Foundation Diploma in IT
-: 2017 – 2019 : Northampton College 
-
-GCSEs including Computing and European Computer Driving Licence
-: 2013 – 2017 : Northampton School for Boys 
-
-####  Activities
-{: data-toc-skip='' .mt-4 }
-
-- Personal hosted environment on Proxmox Virtual Environment (Unix-based). Used to experiment with applications, services, virtual firewalls, and emerging threats. 
-- Cloud-hosted environment on Oracle Cloud Platform. Used for testing cloud threats, applications, and website building. 
-- Share malware examinations, emerging cyber threats, and automated scripts on my website.  
-- Actively attend the Cyber Security & Cloud Expo each year. 
-
-####  References
-{: data-toc-skip='' .mt-4 }
-
-References can be provided on request.
+Complete resume can be provided on request, please email me: [hello@tanderson.net](mailto:hello@tanderson.net)
