@@ -11,7 +11,7 @@ Hi, I’m Tom, and I am currently working as Cyber Security Engineer in the Fina
 Since a young age I have been fascinated by computers. I worked at a paper-round which helped me to be able to afford my first computer, in which contained an AMD Athlon X4 and XFX 7770. This allowed me to explore hardware and software, to which mostly led to playing around with things, breaking and fixing things.
 
 This interest directed my career into the technology, studying foundation diploma in IT at college, networking apprenticeship, to IT and security engineering roles. Technology always developes quickly, so there is a continuous state of learning in the space, I hope to share and build knowledge platform with other.
-![Desktop View](/assets/images/pages/about/about_me.png){: width="300 height="300" }
+![Desktop View](/assets/images/pages/about/about_me.png){: width="400 height="400" }
 
 ####  About This Site 
 {: data-toc-skip='' .mt-4 }
