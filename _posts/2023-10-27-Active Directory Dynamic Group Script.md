@@ -7,46 +7,41 @@ tags: [script, powershell, activedirectory]     # TAG names should always be low
 
 {: data-toc-skip='Active Directory Dynamic Group' .mt-4 .mb-0 }
 
-On occasion third-party application will require an Active Directory (AD) group to manage users access. When ran, depending on the variable Organizational Units (OU) and requirements that you have set it will automatically add and remove users from the group. 
-
-Notes:
+This script below allows a standard group within active directory to become dynamic, when an active directory user has a variable change e.g.  extensionAttribute set from add to group to null, the script will automatically add or remove the user from the group. This can be useful if you are implementation a third-party application that ties to a group and want to add/remove users when accounts a variable is changed. This script allows for the following: 
 1. Multiple OUs can be searched. 
-2. Multiple requirements can be set.
+2. Multiple requirements can be set. 
 3. If the user is not in a listed OU or does not meet the requirements, it will be removed from the AD group. 
 
 ```powershell
-$ADDomain = ‘dc=tanderson,dc=net’
+# Define Active Directory domain and group 
+$ADDomain = "dc=domain,dc=com" 
+$ADGroupname = "dynamic_group_name" 
 
-## Add AD group name
-$ADGroupname = ‘dynamic_group_name’
+# Define Organizational Units (OUs) to search for users 
+$ADOUs = @("OU=Users,$ADDomain") 
 
-## Add OU list to search users
-$ADOUs = @(
-    “OU=Users,$ADDomain”
-)
+# Get AD users that meet the requirements (i.e., have a non-null 'extensionAttribute2') 
+$users = foreach ($OU in $ADOUs) { 
+    Get-ADUser -SearchBase $OU -Filter { extensionAttribute -like 'Add to Group' } -Properties extensionAttribute2 
+} 
 
-## Add AD users that meet the requirements, change the requirements below.
-$users = @()
-foreach ($OU in $ADOUs) {
-    $users += Get-ADUser -SearchBase $OU -Filter { extensionAttribute2 -like ‘*’ } -Properties extensionAttribute2
-}
+# Add qualified users to the group 
+foreach ($user in $users) { 
+    Add-ADGroupMember -Identity $ADGroupname -Members $user.samaccountname -ErrorAction SilentlyContinue 
+} 
 
-foreach ($user in $users) {
-    Add-ADGroupMember -Identity $ADGroupname -Members $user.samaccountname -ErrorAction SilentlyContinue
-}
-
-## Remove AD users that no longer meet the requirements, change the requirements below.
-$members = Get-ADGroupMember -Identity $ADGroupname
-foreach ($member in $members) {
-    if (
-        $member.distinguishedname -notlike “OU=Users,$ADDomain*”
-    ) {
-        Remove-ADGroupMember -Identity $ADGroupname -Members $member.samaccountname -Confirm:$false
-    }
-    if ((Get-ADUser -Identity $member.samaccountname -Properties extensionAttribute2).extensionAttribute2 -eq $null) {
-        Remove-ADGroupMember -Identity $ADGroupname -Members $member.samaccountname -Confirm:$false
-    }
-}
+# Remove AD users from the group if they no longer meet the requirements 
+$members = Get-ADGroupMember -Identity $ADGroupname 
+foreach ($member in $members) { 
+    # Check if member is no longer in the specified OU 
+    if ($member.distinguishedName -notlike "OU=Users,$ADDomain*") { 
+        Remove-ADGroupMember -Identity $ADGroupname -Members $member.samaccountname -Confirm:$false 
+    } 
+    # Check if member's 'extensionAttribute2' is now null 
+    elseif ((Get-ADUser -Identity $member.samaccountname -Properties extensionAttribute2).extensionAttribute2 -eq $null) { 
+        Remove-ADGroupMember -Identity $ADGroupname -Members $member.samaccountname -Confirm:$false 
+    } 
+} 
 ```
 
 {% include utterances.html issue-term=page.title %}

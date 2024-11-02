@@ -5,220 +5,188 @@ categories: [Scripting, Powershell, Atlassian, Jira]
 tags: [script, powershell, atlassian, jira]     # TAG names should always be lowercase
 ---
 
-{: data-toc-skip='Atlassian Jira Automation Script' .mt-4 .mb-0 }
+{: data-toc-skip='Atlassian Jira Automation Scripts' .mt-4 .mb-0 }
 
-These PowerShell scripts for automating the creation of tickets, adding a comment to a ticket and creating actions based of a comment in a ticket using the Atlassian REST API. These scripts can implemented into new and existing projects to assist with automation or logging of activities.
+These PowerShell scripts allow for automation of ticket creation, adding a comment to a ticket and creating actions based of a comment in a ticket using the Atlassian REST API. These scripts can be implemented into new and existing projects to assist with converting manual work to automation e.g. logging of activities or automating responses.
 
-> Create API key [here.](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/) Do not share this key and keep it in a secure location.
+Before running the scripts below, you will need to change the variables to match yours:
+
+1. Jira Domain: this is listed in the section on the Jira URL e.g. https://your-domain.atlassian.net 
+2. Jira Project ID: enter https://your-doman.atlassian.net/rest/api/3/issues/createmeta, search for the project ID this will be location the ticket will be created, make a note of the project ID.
+3. Jira Issue Type ID: using the project ID enter https://your-domain.atlassian.net/rest/api/3/isues/createmeta?projectKeys={JiraProjectID} search for the issue type ID that you want the ticket to be created in, make a note of the issue type ID.
+> Note: You may be required to add mandatory custom fields for tickets to be created, the information can be found here: https://your-domain.atlassian.net/rest/api/3/isues/createmeta?projectKeys={JiraProjectID}&expand=projects.issuetypes.fields
 {: .prompt-info }
+4. Jira Username:  username that can login to Atlassian and has the correct permissions.
+5. Jira API token: API token can be created here: https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/ 
+> Note: Do not share this key and keep it in a secure location.
+{: .prompt-warning }
 
-
-- Creates a ticket in the set location, provides the ticket key if created successfully.
+####  Creating Jira Ticket
+{: data-toc-skip='' .mt-4 }
 
 ```powershell
-try {
-    $baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
-    $projectKey = ""  # Replace with your Jira project key.
-    $issueSummary = ""  # Replace with the summary of the new ticket.
-    $issueDescription = ""  # Replace with the description of the new ticket.
-    $issueType = "Task"  # Replace with the desired issue type (e.g., Task, Bug, Story, etc.).
+# Define your Jira URL and API endpoint 
+$jiraDomain = "domain.atlassian.net"  
+$jiraUrl = "https://$jiraDomain/rest/api/2/issue"  
+$jiraProjectId = "00001" 
+$jiraIssueTypeId = "00002" 
 
-    # API credentials
-    $jira_username = "hello@tanderson.net" # Replace with email address.
-    $api_token = ""  # Update with your Jira API token, create token here: https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/
-    $creds = $jira_username + ":" + $api_token
-    $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($creds))
-    $headers = @{
-        "Content-Type" = "application/json"
-        "Authorization" = "Basic $encodedCreds"
-    }
+# Define your Jira credentials (API token or password) 
+$jiraUsername = "jdoe@domain.com" 
+$jiraApiToken = "API token goes here"  # Replace this with your Jira API token 
+ 
+# Prepare the authentication header (Basic Authentication) 
+$base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("${jiraUsername}:${jiraApiToken}")) 
 
-    # Define Jira API endpoint for creating issues
-    $createIssueEndpoint = "$baseUrl/rest/api/2/issue"
+# Define the issue data
+$body = @{ 
+     "fields" = @{ 
+         "project" = @{ 
+             "id" = $jiraProjectId 
+         } 
+         "issuetype" = @{ 
+             "id" = $jiraIssueTypeId 
+         } 
+         "summary" = "This is a sample issue created from PowerShell" 
+         "description" = "Details about the issue go here." 
+     } 
+} 
 
-    # Prepare the request body for creating the new ticket
-    $issueData = @{
-        "fields" = @{
-            "project" = @{
-                "key" = $projectKey #$baseUrl/jira/software/projects/PROJECT_KEY/boards/1
+# Convert the body to JSON 
+$bodyJson = $body | ConvertTo-Json -Depth 10 
 
-            }
-            "summary" = $issueSummary
-            "description" = $issueDescription
-            "issuetype" = @{
-                "name" = $issueType
-            }
-        }
-    } | ConvertTo-Json
+# Send the POST request to Jira API 
+$response = Invoke-RestMethod -Uri $jiraUrl -Method Post -Headers @{ 
+    Authorization = "Basic $base64AuthInfo" 
+    "Content-Type" = "application/json" 
+} -Body $bodyJson 
 
-    # Send the POST request to create the new ticket
-    $createResponse = Invoke-RestMethod -Uri $createIssueEndpoint -Method Post -Headers $headers -Body $issueData
-
-    # Check the response status
-    if ($createResponse) {
-        $newIssueKey = $createResponse.key
-        Write-Host "Ticket created successfully: $newIssueKey"
-    } else {
-        Write-Host "Failed to create the ticket"
-    }
-} catch {
-    Write-Host "An error occurred: $_"
-}
+# Output the response 
+$response 
 ```
-
-- Checks set location for tickets with a matching variable e.g. title, it will then add a comment to the ticket.
+####  Add Comment to Ticket using Summary Search
+{: data-toc-skip='' .mt-4 }
 
 ```powershell
-try {
-    $baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
-    $title = "Test Search" # Replace with the title you want to search for
-    $searchEndpoint = "$baseUrl/rest/api/2/search"
+# Define your Jira URL and API endpoint 
+$jiraDomain = "domain.atlassian.net"  
+$jiraSearchUrl = "https://$jiraDomain/rest/api/2/search" 
+$jiraIssueUrl = "https://$jiraDomain/rest/api/2/issue" 
+$jiraProjectId = "00001" 
+$jiraIssueTypeId = "00002" 
 
-    # API credentials
-    $jira_username = "hello@tanderson.net" # Replace with email address.
-    $api_token = "" # Update with your Jira API token, create token here: https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/
-    $creds = "$jira_username:$api_token"
-    $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($creds))
-    $headers = @{
-        "Content-Type" = "application/json"
-        "Authorization" = "Basic $encodedCreds"
-    }
+# Define your Jira credentials (API token or password) 
+$jiraUsername = "jdoe@domain.com" 
+$jiraApiToken = "API token goes here"  # Replace this with your Jira API token 
 
-    # Prepare the JQL query to search for the title
-    $jqlQuery = "summary ~ `"$title`" ORDER BY created DESC"
+# Prepare the authentication header (Basic Authentication) 
+$base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("${jiraUsername}:${jiraApiToken}")) 
 
-    # Prepare the search request body with JQL query
-    $searchRequestBody = @{
-        "jql" = $jqlQuery
-    } | ConvertTo-Json
+# Define the summary you're searching for 
+$issueSummary = "This is a sample issue created from PowerShell" 
 
-    # Send the POST request to search for the ticket
-    $searchResponse = Invoke-RestMethod -Uri $searchEndpoint -Method Post -Headers $headers -Body $searchRequestBody
+# Search for existing issues with the same summary within the specific project and issue type 
+$searchQuery = "?jql=project=$jiraProjectId AND issuetype=$jiraIssueTypeId AND summary~'$issueSummary'" 
+$response = Invoke-RestMethod -Uri "$jiraSearchUrl$searchQuery" -Method Get -Headers @{ 
+    Authorization = "Basic $base64AuthInfo" 
+    "Content-Type" = "application/json" 
+} 
 
-    # Check the search response status
-    if ($searchResponse) {
-        $totalResults = $searchResponse.total
-        Write-Host "Found $totalResults ticket(s) matching the title '$title':"
+# Check if an issue with the same summary exists 
+if ($response.issues.Count -gt 0) { 
+    # Get the first matching issue's key 
+    $issueKey = $response.issues[0].key 
+    Write-Output "Issue already exists: $issueKey. Adding a comment." 
 
-        if ($totalResults -gt 0) {
-            # Extract the first matching issue key
-            $issueKey = $searchResponse.issues[0].key
+    # Define the comment data 
+    $commentBody = @{ 
+        "body" = "Adding a comment to the existing issue." 
+    } 
 
-            # Get the assignee's ID
-            $assigneeId = $searchResponse.issues[0].fields.assignee.accountId
+    # Convert the comment body to JSON 
+    $commentBodyJson = $commentBody | ConvertTo-Json -Depth 10 
 
-            # Define Jira API endpoint for adding comments
-            $commentEndpoint = "$baseUrl/rest/api/2/issue/$issueKey/comment"
+    # Send the POST request to add a comment to the existing issue 
+    $commentResponse = Invoke-RestMethod -Uri "$jiraIssueUrl/$issueKey/comment" -Method Post -Headers @{ 
+        Authorization = "Basic $base64AuthInfo" 
+        "Content-Type" = "application/json" 
+    } -Body $commentBodyJson 
 
-            # Prepare the comment data
-            $comment = "Test Comment"
-            $commentData = @{
-                "body" = $comment
-            } | ConvertTo-Json
-
-            # Send the POST request to add the comment
-            $commentResponse = Invoke-RestMethod -Uri $commentEndpoint -Method Post -Headers $headers -Body $commentData
-
-            # Check the comment response status
-            if ($commentResponse) {
-                Write-Host "Test Comment Added"
-            } else {
-                Write-Host "Failed to add comment to $issueKey"
-            }
-        } else {
-            Write-Host "No issues found with the title '$title'"
-        }
-    } else {
-        Write-Host "Failed to search for tickets with the title '$title'"
-    }
-} catch {
-    Write-Host "An error occurred: $_"
-}
+    # Output the response for the comment 
+    $commentResponse 
+} else { 
+    Write-Output "No existing issue found with the specified summary in the specified project and issue type. No action taken." 
+} 
 ```
-
-- Checks set location for a matching comment across all tickets, it will then add a comment to the ticket.
+####  Respond to Comment in Ticket using Summary and Comment Search
+{: data-toc-skip='' .mt-4 }
 
 ```powershell
-$baseUrl = "https://domain.atlassian.net" # Replace with your Atlassian domain.
-$searchEndpoint = "$baseUrl/rest/api/2/search"
+# Define your Jira URL and API endpoint 
+$jiraDomain = "domain.atlassian.net"  
+$jiraSearchUrl = "https://$jiraDomain/rest/api/2/search" 
+$jiraIssueUrl = "https://$jiraDomain/rest/api/2/issue" 
+$jiraProjectId = "00001" 
+$jiraIssueTypeId = "00002" 
 
-# Prepare the JQL query to search for the title
-$title = "Account Disablement"
-$jqlQuery = "summary ~ `"$title`" ORDER BY created DESC"
+# Define your Jira credentials (API token or password) 
+$jiraUsername = "jdoe@domain.com" 
+$jiraApiToken = "API token goes here"  # Replace this with your Jira API token 
 
-# API credentials
-$jira_username = "hello@tanderson.net" # Replace with email address.
-$api_token = "" # Update with your Jira API token, create token here: https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/
-$creds = "$jira_username:$api_token"
-$encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($creds))
-$headers = @{
-    "Content-Type" = "application/json"
-    "Authorization" = "Basic $encodedCreds"
-}
+# Prepare the authentication header (Basic Authentication) 
+$base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("${jiraUsername}:${jiraApiToken}")) 
 
-# Prepare the search request body with JQL query
-$searchRequestBody = @{
-    "jql" = $jqlQuery
-} | ConvertTo-Json
+# Define the summary and comment text you're searching for 
+$issueSummary = "This is a sample issue created from PowerShell" 
+$commentText = "This is the text of the comment we're searching for." 
 
-# Send the POST request to search for the tickets
-$searchResponse = Invoke-RestMethod -Uri $searchEndpoint -Method Post -Headers $headers -Body $searchRequestBody
+# Search for existing issues with the same summary within the specific project and issue type 
+$searchQuery = "?jql=project=$jiraProjectId AND issuetype=$jiraIssueTypeId AND summary~'$issueSummary'" 
+$response = Invoke-RestMethod -Uri "$jiraSearchUrl$searchQuery" -Method Get -Headers @{ 
+    Authorization = "Basic $base64AuthInfo" 
+    "Content-Type" = "application/json" 
+} 
 
-# Check the search response status
-if ($searchResponse) {
-    $totalResults = $searchResponse.total
-    Write-Host "Found $totalResults ticket(s) matching the title '$title':"
+# Check if an issue with the same summary exists 
+if ($response.issues.Count -gt 0) { 
+    # Get the first matching issue's key 
+    $issueKey = $response.issues[0].key 
+    Write-Output "Issue found: $issueKey. Searching for the specified comment." 
 
-    if ($totalResults -gt 0) {
-        # Loop through each matching issue
-        foreach ($issue in $searchResponse.issues) {
-            $issueKey = $issue.key
+    # Retrieve comments on the issue 
+    $commentsResponse = Invoke-RestMethod -Uri "$jiraIssueUrl/$issueKey/comment" -Method Get -Headers @{ 
+        Authorization = "Basic $base64AuthInfo" 
+        "Content-Type" = "application/json" 
+    } 
 
-            # Extract the name of the employee from customfield_10824
-            $fullnameofemployee = $issue.fields.customfield_10824.displayName # This should be the full name
+    # Look for the specific comment text in the comments 
+    $foundComment = $commentsResponse.comments | Where-Object { $_.body -match [regex]::Escape($commentText) } 
+    if ($foundComment) { 
+        $commentId = $foundComment.id 
+        Write-Output "Comment found with ID $commentId. Responding to the comment." 
 
-            # Define Jira API endpoint for retrieving comments
-            $commentsEndpoint = "$baseUrl/rest/api/2/issue/$issueKey/comment"
+        # Define the reply data 
+        $replyBody = @{ 
+            "body" = "This is a response to the existing comment." 
+        } 
 
-            # Send the GET request to retrieve the comments
-            $commentsResponse = Invoke-RestMethod -Uri $commentsEndpoint -Method Get -Headers $headers
+        # Convert the reply body to JSON 
+        $replyBodyJson = $replyBody | ConvertTo-Json -Depth 10 
 
-            # Check the comments response status
-            if ($commentsResponse) {
-                # Check if the assignee has responded with 'Test Message' in the comments
-                $assigneeComment = $commentsResponse.comments | Where-Object {
-                    $_.author.accountId -eq $issue.fields.assignee.accountId -and $_.body -like "*Test Message*"
-                }
+        # Send the POST request to reply to the found comment 
+        $replyResponse = Invoke-RestMethod -Uri "$jiraIssueUrl/$issueKey/comment/$commentId" -Method Post -Headers @{ 
+            Authorization = "Basic $base64AuthInfo" 
+            "Content-Type" = "application/json" 
+        } -Body $replyBodyJson 
 
-                if ($assigneeComment) {
-                    # Define Jira API endpoint for adding a comment
-                    $commentEndpoint = "$baseUrl/rest/api/2/issue/$issueKey/comment"
-
-                    # Prepare the comment body
-                    $commentBody = @{
-                        "body" = "Test Comment Found!"
-                    } | ConvertTo-Json
-
-                    # Send the POST request to add the comment
-                    $commentResponse = Invoke-RestMethod -Uri $commentEndpoint -Method Post -Headers $headers -Body $commentBody
-
-                    # Check the comment response status
-                    if ($commentResponse) {
-                        Write-Host "Comment added successfully to issue $issueKey"
-                    } else {
-                        Write-Host "Failed to add comment to issue $issueKey"
-                    }
-                } else {
-                    Write-Host "No action required for issue $issueKey"
-                }
-            }
-        }
-    } else {
-        Write-Host "No issues found with the title '$title'"
-    }
-} else {
-    Write-Host "Failed to search for tickets with the title '$title'"
-}
+        # Output the response for the reply 
+        $replyResponse 
+    } else { 
+        Write-Output "No comment found with the specified text. No action taken." 
+    } 
+} else { 
+    Write-Output "No existing issue found with the specified summary in the specified project and issue type. No action taken." 
+} 
 ```
 
 {% include utterances.html issue-term=page.title %}

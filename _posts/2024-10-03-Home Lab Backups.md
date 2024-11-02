@@ -38,6 +38,7 @@ Monitoring is a key part of keeping the integrity and availability of backups, w
 - Weekly scheduled backups of all hosts.
 - Alerts and monitoring of backups, letting me know the status of backups and drive health.
 - Instant backup recovery allowing to restore a host directly from the NAS.
+![Desktop View](/assets/images/pages/home_lab_backups/backup_email_notification.jpg){: width="700" height="400" }
 
 Useful links:
 - [Backup and Restore - Proxmox VE ](https://pve.proxmox.com/wiki/Backup_and_Restore).
