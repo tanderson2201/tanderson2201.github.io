@@ -10,7 +10,7 @@ Hardworking, self-motivated individual and experienced engineer in the finance s
 
 Extensive experience in security networking, programming, and managing. Diverse knowledge of systems and applications in these fields with a key understanding of enterprise resource planning and endpoint detection response. 
 
-Currently focusing on implementing NAC and CASB solutions in the organisation. Personally, working towards ISC2 CISSP to develop my expertise, recently achieved ISC2 CC. 
+Currently focusing on implementing NAC and CASB solutions in the organisation. Personally, working towards ISC2 CISSP to develop my expertise, recently achieved [ISC2 CC.](https://www.credly.com/badges/9b453ce6-604b-4b7c-aa6c-a7afe75ad56a)
 
 ####  Areas of Expertise
 {: data-toc-skip='' .mt-4 }
