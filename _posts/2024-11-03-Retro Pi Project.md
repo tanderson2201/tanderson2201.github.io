@@ -5,17 +5,18 @@ categories: [Projects, Pi]
 tags: [projects, retropie, pi]     # TAG names should always be lowercase
 ---
 
-#### Introduction
+#### RetroFlag
 {: data-toc-skip='' .mt-4 .mb-0 }
 
-RetroFlag produce a range of different controllers and shell game consoles that allow for Raspberry Pi computers to be added to create an emulator console using an operating system like RetroPie. In this setup I will be using the:
+Produces a range of different controllers and shell game consoles that allow for Raspberry Pi computers to be added to create an emulator console using an operating system like RetroPie. In this setup I will be using the:
 - Retroflag GPi CASE
 - Raspberry Pi Zero W
-- SanDisk 32GB SD card 
-![Desktop View](/assets/images/pages/retro_pi_project/retro_pi_1.png){: width="700" height="400" }
+- SanDisk 32GB SD card
 
 > Installation instructions can be found [here.](https://support.retroflag.com/manual/case/GPi_CASE_Manual.pdf) 
 {: .prompt-info }
+
+![Desktop View](/assets/images/pages/retro_pi_project/retro_pi_1.png){: width="700" height="400" }
 
 Required Downloads
 - Download GPi Case patch [here.](https://support.retroflag.com/Products/GPi_Case/GPi_Case_patch.zip)
