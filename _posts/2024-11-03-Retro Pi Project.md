@@ -79,10 +79,10 @@ psk="your-wifi-password"
 This has been a fun project to work on and has given me a portable game console that can emulate many non-demanding games. The Retro Pie emulator works great and has a really clean interface. I would like to build a slightly more powerful version using the Raspberry Pi 5, this would allow to emulate more demanding games and also allow for multiplayer.
 
 ![Desktop View](/assets/images/pages/retro_pi_project/retro_pi_2.png){: width="700" height="400" }
-_Retro Pi loading the os from SD card._
+_RetroPi loading the OS from SD card._
 
 ![Desktop View](/assets/images/pages/retro_pi_project/retro_pi_3.png){: width="700" height="400" }
-_Retro Pi options to select the emulator you want to play on._
+_RetroPi select the emulator you want to play on._
 
 ![Desktop View](/assets/images/pages/retro_pi_project/retro_pi_4.png){: width="700" height="400" }
-_Retro Pi emulating Mario Kart - Super Circuit, GameBoy Adcanced._
+_RetroPi emulating Mario Kart - Super Circuit, GameBoy Advanced._
