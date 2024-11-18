@@ -51,6 +51,7 @@ On a Windows client device you want to connect to the VPN on:
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 I have the client installed on my laptop and mobile with the VPN automatically tuned on it always me to easily access my home lab to work on projects remotely. The setup has been a simple process and has given me a lot of flexibility when working on the go and the privacy and security when working on unknown or unsecure networks. Also, it's very easy to scale up or down the amount of connections when required. In the future I will see if I can enhance the security harderning standards on the virtual machine that is running the VPN services, this would mitigate any potential risk of authorised access through the VPN.
+The example below shows the VPN tunnel log between my laptop and the server with PiVPN installed, allowing me to connect to my proxmox console remotely.
 ![Desktop View](/assets/images/pages/home_lab_vpn/vpn_connection.png){: width="700" height="400" }
 
 #### Useful Links
