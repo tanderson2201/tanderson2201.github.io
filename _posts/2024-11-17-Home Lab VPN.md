@@ -54,7 +54,6 @@ I have the client installed on my laptop and mobile with the VPN automatically t
 The example below shows the VPN tunnel log between my laptop and the server with PiVPN installed, allowing me to connect to my proxmox console remotely.
 ![Desktop View](/assets/images/pages/home_lab_vpn/vpn_connection.png){: width="700" height="400" }
 
-#### Useful Links
-{: data-toc-skip='' .mt-4 .mb-0 }
+Useful links:
 - [PiVPN](https://www.pivpn.io/).
 - [WireGuard Quickstart](https://www.wireguard.com/quickstart/).
