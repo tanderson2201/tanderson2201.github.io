@@ -17,7 +17,7 @@ VPN (Virtual Private Network) is a service that creates a secure, end-to-end enc
 #### Goals
 {: data-toc-skip='' .mt-4 .mb-0 }
 
-Using my Dell Wyse (networking server) I plan on setting up PIVPN which allows open-source protocol WireGuard and Open VPN, I will be using WireGuard due to it being having better performance, modern cryptography and simpler to configure. My goals are:
+Using my Dell Wyse (pvewyse1), I plan on setting up PIVPN which allows open-source protocol WireGuard or OpenVPN to run a secure tunnel to the system, I will be using WireGuard due to it being having better performance, modern cryptography and simpler to configure. I want to achieve the following with this solution:
 
 1. I do a lot of travelling and found that it would be useful to connect back to my home lab to remotely access resources on the go.  
 2. In situations where I do need to connect to public/unsecure WiFi networks I can use the VPN to encrypt my traffic to mitigate the risks of packet capturing.  
@@ -30,7 +30,7 @@ On the host you want the VPN services to run on:
 2. Follow the steps on screen: Choose between WireGuard or OpenVPN (I will be using WireGuard for the reasons mentioned above).
 3. Set your static IP address or use Dynaminc DNS (DDNS).
 4. Setup port forwarding for `51820 UDP` , this will need to be configured on your router or firewall.
-5. Create a client .conf profile this be transferred to the client device you want to connect from: `pivpn -a ‘hostname’`.
+5. Create a client .conf profile this be transferred to the client device you want to connect from: `pivpn -a {hostname}`.
 6. Check the .conf file has been created: `cd /home/{username}/configs && ls -a`.
 7. Use a file transfer solution e.g. WInSCP, to copy the .conf to the client device. 
 
@@ -43,7 +43,7 @@ On a Unix client device you want to connect to the VPN on:
 {: .prompt-tip }
 
 On a Windows client device you want to connect to the VPN on:
-1. Install WireGuard [here.](https://download.wireguard.com/windows-client/wireguard-installer.exe).
+1. Install WireGuard [here](https://download.wireguard.com/windows-client/wireguard-installer.exe).
 2. Click Add tunnel > Import tunnel from file > select the {hostname}.conf file. 
 3. VPN functionality can be controlled by the UI. 
 
