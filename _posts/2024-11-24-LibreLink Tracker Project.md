@@ -66,8 +66,7 @@ The development led to the below solutions that work on Windows and Linux (works
 | Version                                            | 4.2.1                                                |
 
 | Body                                               | Raw                                                  |
-|:---------------------------------------------------------------------------------------------------------:|
-|                                                    |                                                      |
+
  ```json
  {
  "email": "Your LibreLinkUp Username",
@@ -76,8 +75,6 @@ The development led to the below solutions that work on Windows and Linux (works
 ```
 
 | Send                                                                                                      |
-|:---------------------------------------------------------------------------------------------------------:|
-|                                                                                                           |
 ```json
  authTicket": {
             "token": Make note of this API token.",
@@ -86,7 +83,6 @@ The development led to the below solutions that work on Windows and Linux (works
 ```
 
 - Under `authTicket` you will see your API token, make a note of this.
-
 - Enter the following details into Postman to get your `Patient ID`: 
 
 | GET                                                | https://api.libreview.io/llu/connections             |
@@ -102,8 +98,7 @@ The development led to the below solutions that work on Windows and Linux (works
 | Version                                            | 4.7                                                  |
 
 | Send                                                                                                      |
-|:---------------------------------------------------------------------------------------------------------:|
-|                                                                                                           |                                                                                        |
+
 ```json
 {                                                                                                          
     "status": 0,                                                                                           
@@ -120,11 +115,10 @@ The development led to the below solutions that work on Windows and Linux (works
 ```
 
 - Under `data` you will see your `PatientID`, make a note of this.
-
+- Download or copy the script below, change the variables to match your `PatientID` and API `Token`:
 > To run the script you will need to install modules `pip install requests` and `pip install tkinter`
 {: .prompt-info }
 
-- Download or copy the script below, change the variables to match your `PatientID` and API `Token`:
 
 ```python
 import requests
