@@ -58,8 +58,7 @@ The development led to the below solutions that work on Windows and Linux (works
 |:---------------------------------------------------|-----------------------------------------------------:|
 | Authorization                                      | No Auth                                              |
 
-| Headers                                                                                                   |
-| Key                                                | Value                                                |
+| Headers  Key                                                | Value                                       |
 |:---------------------------------------------------|-----------------------------------------------------:|
 | Content-Type                                       | application/json                                     |
 | Product                                            | llu.ios (or llu.andriod)                             |
@@ -88,7 +87,6 @@ Send:
 |:---------------------------------------------------|-----------------------------------------------------:|
 | Authorization                                      | Bearer Token                                         |
 | Token                                              | “Enter your API Token”                               |
-
 
 | Headers Key                                        | Value                                                |
 |:---------------------------------------------------|-----------------------------------------------------:|
