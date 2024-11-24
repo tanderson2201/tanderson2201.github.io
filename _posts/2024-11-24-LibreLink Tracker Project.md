@@ -17,7 +17,7 @@ My goal is to create a simple but effective application that will resolve the is
 
 ![Desktop View](/assets/images/pages/librelink_tracker_project/librelink_communication.png){: width="700" height="400" }
 
-> All updates to this project can be found [here.](https://github.com/tanderson2201/glucose_tracker)
+> All future updates to this project can be found [here.](https://github.com/tanderson2201/glucose_tracker)
 {: .prompt-info }
 
 #### Development 
@@ -64,21 +64,19 @@ The development led to the below solutions that work on Windows and Linux (works
 | Product                                            | llu.ios (or llu.andriod)                             |
 | Version                                            | 4.2.1                                                |
 
-Body Raw:
- ```json
- {
- "email": "Your LibreLinkUp Username",
- "password": "Your LibreLinkUp Password"
-}
-```
+| Body                                               | Raw                                                  |
+|:---------------------------------------------------|-----------------------------------------------------:|
+|{ 
+| "email": "Your LibreLinkUp Username",
+| "password": "Your LibreLinkUp Password"
+|}                                                                                                          |
 
-Send:
-```json
- authTicket": {
-            "token": Make note of this API token.",
-             "expires": 1745355110,
-             "duration": 15552000000
-```
+| Send                                               |                                                      |
+|:---------------------------------------------------|-----------------------------------------------------:|
+| authTicket": {                                                                                            |
+|            "token": Make note of this API token.",                                                        |
+|             "expires": 1745355110,                                                                        |
+|             "duration": 15552000000                                                                       |
 
 - Under `authTicket` you will see your API token, make a note of this.
 - Enter the following details into Postman to get your `Patient ID`: 
@@ -94,27 +92,25 @@ Send:
 | Product                                            | llu.ios (or llu.andriod)                             |
 | Version                                            | 4.7                                                  |
 
-Send:
-```json
-{                                                                                                          
-    "status": 0,                                                                                           
-    "data": [                                                                                              
-        {                                                                                                  
-            "id": "Your ID",                                                                               
-            "patientId": " Make note of the Patient ID.",                                                  
-            "country": "GB",                                                                               
-            "status": 2,                                                                                   
-            "firstName": "Tom",                                                                            
-            "lastName": "Anderson",                                                                        
-            "targetLow": 70,                                                                               
-            "targetHigh": 157,                                                                               
-```
+| Send                                               |                                                      |
+|:---------------------------------------------------|-----------------------------------------------------:|
+|{                                                                                                          |
+|    "status": 0,                                                                                           |
+|    "data": [                                                                                              |
+|        {                                                                                                  |
+|            "id": "Your ID",                                                                               |
+|            "patientId": " Make note of the Patient ID.",                                                  |
+|            "country": "GB",                                                                               |
+|            "status": 2,                                                                                   |
+|            "firstName": "Tom",                                                                            |
+|            "lastName": "Anderson",                                                                        |
+|            "targetLow": 70,                                                                               |
+|            "targetHigh": 157,                                                                             |
 
 - Under `data` you will see your `PatientID`, make a note of this.
 - Download or copy the script below, change the variables to match your `PatientID` and API `Token`:
 > To run the script you will need to install modules `pip install requests` and `pip install tkinter`
 {: .prompt-info }
-
 
 ```python
 import requests
