@@ -67,6 +67,7 @@ The development led to the below solutions that work on Windows and Linux (works
 
 | Body                                               | Raw                                                  |
 |:---------------------------------------------------------------------------------------------------------:|
+|                                                    |                                                      |
  ```json
  {
  "email": "Your LibreLinkUp Username",
@@ -74,8 +75,9 @@ The development led to the below solutions that work on Windows and Linux (works
 }
 ```
 
-| Send                                              |                                                       |
+| Send                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------:|
+|                                                                                                           |
 ```json
  authTicket": {
             "token": Make note of this API token.",
@@ -99,8 +101,9 @@ The development led to the below solutions that work on Windows and Linux (works
 | Product                                            | llu.ios (or llu.andriod)                             |
 | Version                                            | 4.7                                                  |
 
-| Send                                              |                                                       |
+| Send                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------:|
+|                                                                                                           |                                                                                        |
 ```json
 {                                                                                                          
     "status": 0,                                                                                           
