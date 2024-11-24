@@ -45,7 +45,7 @@ The development led to the below solutions that work on Windows and Linux (works
 > This application can be run as .py or converted to an .exe file type.
 {: .prompt-info }
 
-![Desktop View](/assets/images/pages/librelink_tracker_project/librelink_v3.png){: width="700" height="400" }
+![Desktop View](/assets/images/pages/librelink_tracker_project/librelink_v3.jpg){: width="700" height="400" }
 
 #### Setup 
 {: data-toc-skip='' .mt-4 .mb-0 }
